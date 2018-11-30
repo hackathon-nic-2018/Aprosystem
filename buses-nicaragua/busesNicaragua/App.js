@@ -46,7 +46,7 @@ const LinesStackNavigator = createStackNavigator({
     navigationOptions: {
       title: 'Lineas',
       headerStyle: {
-        backgroundColor: '#136d8b',
+        backgroundColor: '#193555',
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
@@ -59,7 +59,7 @@ const LinesStackNavigator = createStackNavigator({
     navigationOptions: {
       title: 'Datos de lineas',
       headerStyle: {
-        backgroundColor: '#136d8b',
+        backgroundColor: '#193555',
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
@@ -76,7 +76,7 @@ const MyNearbyStopsNavigator = createStackNavigator({
     navigationOptions: {
       title: 'Paradas Cercanas',
       headerStyle: {
-        backgroundColor: '#136d8b',
+        backgroundColor: '#193555',
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
@@ -92,7 +92,7 @@ const SuggestionNavigator = createStackNavigator({
     navigationOptions: {
       title: 'Sugerencias',
       headerStyle: {
-        backgroundColor: '#136d8b',
+        backgroundColor: '#193555',
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
@@ -106,9 +106,9 @@ const TurismoStackNavigator = createStackNavigator({
   Turismo: {
     screen: TurismoScreen,
     navigationOptions: {
-      title: 'Ajustes',
+      title: 'Lugares turisticos',
       headerStyle: {
-        backgroundColor: '#136d8b',
+        backgroundColor: '#193555',
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
@@ -125,7 +125,7 @@ const MyAboutStackNavigator = createStackNavigator({
     navigationOptions: {
       title: 'Acerca de',
       headerStyle: {
-        backgroundColor: '#136d8b',
+        backgroundColor: '#193555',
       },
       headerTintColor: '#fff',
       headerTitleStyle: {

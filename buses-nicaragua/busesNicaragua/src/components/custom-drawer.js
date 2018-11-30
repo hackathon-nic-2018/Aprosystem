@@ -17,7 +17,7 @@ const CustomDrawerContentComponent = (props) => (
                 style={styles.header}
             >
                 <Image
-                    source={require('./../image/Principal.png')}
+                    source={require('./../image/LogoApp.png')}
                     style={styles.headerImage}
                 />
             </View>
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         height: 160,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#136d8b',
+        backgroundColor: '#193555',
         marginBottom: 1,
     },
     headerImage: {

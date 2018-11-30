@@ -9,21 +9,24 @@ import {
 }
 from 'react-native';
 import { withNavigation } from 'react-navigation';
-/*
-import {Button} from 'react-native-elements';
-import d from 'react-native-vector-icons'*/
-
 class MyHomeScreen extends Component {
 
     static navigationOptions = {
         title: 'Buses Nicaragua',
         headerStyle: {
-            backgroundColor: '#1872a7',
+            backgroundColor: '#193555',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
          fontWeight: 'bold',
           },
+          headerRight:(
+            <Button
+                onPress={() => this.props.navigation.openDrawer()}
+                title="Menu"
+                color="#blue"
+            />
+          ),
     };
 
     onClickBusquedaScreen = () => {
@@ -37,15 +40,6 @@ class MyHomeScreen extends Component {
 
                     <View>
                         <Image source = { require('../image/x.png')} style= {{width: '100%', height: '100%'}} />
-                        </View>       
-                            <View style={styles.container}>
-                                <View style={styles.alternativeLayoutButtonContainer}>
-                                    <Button
-                                        onPress={this.onClickBusquedaScreen}
-                                        title="Busqueda Lineas"
-                                        color="#blue"
-                                    />
-                            </View>
                     </View>
                 </View>
             
@@ -59,16 +53,6 @@ const styles = StyleSheet.create({
      flex: 3,
      justifyContent: 'flex-end',
     },
-    buttonContainer: {
-      margin: 40,
-      marginEnd: 20,
-    },
-    alternativeLayoutButtonContainer: {
-      margin: 40,
-      marginEnd: 20,
-      flexDirection: 'row',
-      justifyContent: 'flex-end' 
-       }
   });
 
 export default MyHomeScreen;

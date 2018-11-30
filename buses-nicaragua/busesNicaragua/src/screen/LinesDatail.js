@@ -11,7 +11,7 @@ import Linesdatail from '../containers/linesdatail-container';
 
 
 class LinesdatailScreen extends Component {
-
+/*
     static navigationOptions = {
         headerRight: (
             <View
@@ -28,13 +28,13 @@ class LinesdatailScreen extends Component {
                 </TouchableOpacity>
             </View>
         ),
-    };
+    };*/
 
     render() {
 
         return (
             <View>
-                <Text style={styles.Expreso}>Linea de Buses Expresos</Text>
+                 <Text style={styles.Expreso}>Linea de Buses Ruteados</Text>
                 <Linesdatail/>
             </View>
         );
@@ -45,12 +45,15 @@ class LinesdatailScreen extends Component {
 
 const styles = StyleSheet.create({
     Expreso: {
-      color: 'red',
-      fontWeight: 'bold',
-      fontSize: 18,
-      justifyContent: 'center',
-      paddingHorizontal: 15
-    },
+        color: '000000',
+        fontWeight: 'Regular',
+        fontSize: 15,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingHorizontal: 15,
+        borderRadius: 4,
+        
+      },
   });
 
 export default LinesdatailScreen;

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "267354469637",
+    "firebase_url": "https://buses-nicaragua.firebaseio.com",
+    "project_id": "buses-nicaragua",
+    "storage_bucket": "buses-nicaragua.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267354469637:android:173b924c0fb7d76b",
+        "android_client_info": {
+          "package_name": "com.aprosystem.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267354469637-tk9i8od2qv6pbsn2alpo7cmtgu20qusn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprosystem.android",
+            "certificate_hash": "a83c4b6a994956973f6ad54040bdd564f2881620"
+          }
+        },
+        {
+          "client_id": "267354469637-2li2r0tnvai8q5mb2roqkh37fmfblsfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApK0zaZrRQd3gxUPWcOwUAvqFc4is2_HU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267354469637-2li2r0tnvai8q5mb2roqkh37fmfblsfs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

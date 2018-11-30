@@ -14,8 +14,8 @@ import LinesScreen from './lineas';
 const styleItem = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        padding: 12,
-        borderRadius: 4,
+        padding: 10,
+        borderRadius: 2,
         backgroundColor: '#FFFFFF',
     },
     sectionInfo: {
@@ -26,7 +26,7 @@ const styleItem = StyleSheet.create({
         fontSize: 18,
     },
     description: {
-        fontSize: 12,
+        fontSize: 14,
     },
 
 });

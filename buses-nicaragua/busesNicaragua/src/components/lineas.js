@@ -17,7 +17,7 @@ const styleItem = StyleSheet.create({
     container: {
         flexDirection: 'row',
         padding: 12,
-        borderRadius: 4,
+        borderRadius: 3,
         backgroundColor: '#FFFFFF',
     },
     sectionInfo: {

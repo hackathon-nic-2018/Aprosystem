@@ -46,12 +46,13 @@ class LinesdatailScreen extends Component {
 const styles = StyleSheet.create({
     Expreso: {
         color: '000000',
-        fontWeight: 'Regular',
-        fontSize: 15,
+        fontWeight: 'Bold',
+        fontSize: 18,
         alignItems: 'center',
         justifyContent: 'center',
-        paddingHorizontal: 15,
+        paddingHorizontal: 14,
         borderRadius: 4,
+        marginTop: 3,
         
       },
   });

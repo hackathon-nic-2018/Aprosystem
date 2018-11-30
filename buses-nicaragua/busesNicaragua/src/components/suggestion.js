@@ -10,6 +10,11 @@ import {
     StyleSheet,
 } from 'react-native';
 
+import {
+    withNavigation
+} from 'react-navigation'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
 const styleItem = StyleSheet.create({
     container: {
         flexDirection: 'row',
@@ -73,7 +78,7 @@ const Suggestion = ({ data }) => (
             <ScrollView>
                 <FlatList
                     data={data} 
-                    renderItem={({item}) => <SuggestionItem item={item} onPress={ (key) => navigation.navigate('lineasdata') } />}
+                    renderItem={({item}) => <SuggestionItem item={item} onPress={ (key) => navigation.navigate('suggestiondata') } />}
                     ItemSeparatorComponent={() => <View style={{ height: 8, flex: 1, }}></View>}
                 />
             </ScrollView>
@@ -81,4 +86,4 @@ const Suggestion = ({ data }) => (
     </SafeAreaView>
 );
 
-export default Suggestion;
+export default withNavigation(Suggestion);

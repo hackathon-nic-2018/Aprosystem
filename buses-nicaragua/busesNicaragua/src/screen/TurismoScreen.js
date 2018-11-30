@@ -2,22 +2,30 @@ import React, { Component } from 'react';
 import {
     View, 
     StyleSheet,
-    Text
+    Text,
+    TouchableOpacity,
+    Button
 }
 from 'react-native';
 import { withNavigation } from 'react-navigation';
 
 class TurismoScreen extends Component{
 
-    onClickBusquedaScreen = () => {
-        this.props.navigation.navigate('BusquedaScreen');
+    onClickHotelBusquedaScreen = () => {
+        this.props.navigation.navigate('Hotel');
     };
 
 
     render(){
         return(
             <View>
-               <Text style={styles.Desarrolladores}>Desarrollador</Text>
+                <TouchableOpacity style={styles.button}>
+                     <Button
+                         onPress={this.onClickHotelBusquedaScreen}
+                         title="Hotel"
+                         color="#193555"
+                     />
+                </TouchableOpacity>
             </View>
         )
     }
@@ -35,6 +43,10 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         borderRadius: 10,
         marginTop: 10,
+      },
+      button:{
+        marginTop: 10,
+        backgroundColor: '000000'
       }
   });
 

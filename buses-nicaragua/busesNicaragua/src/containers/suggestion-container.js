@@ -5,7 +5,7 @@ import firebase from 'react-native-firebase';
 import {
     dataLine,
     filterDataLine,
-} from './../state/actions/SuggestionAction'
+} from './../state/actions/linesAction'
 import { ToastAndroid, } from 'react-native'
 
 
@@ -71,6 +71,7 @@ class SuggestionContainer extends Component {
         return(
             <Suggestion
                 data={data}
+                navigate={this.props.navigate}
             />
         );
 

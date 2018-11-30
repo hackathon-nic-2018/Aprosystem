@@ -20,6 +20,8 @@ import MyHomeScreen from './src/screen/MyHomeScreen';
 import LinesScreen from './src/screen/LinesScreen';
 import MyNearbyStopsScreen from './src/screen/MyNearbyStopsScreen';
 import SuggestionScreen from './src/screen/SuggestionScreen';
+import SuggestionDatail from './src/screen/SuggestionDatail'
+import HotelScreen from './src/screen/HotelScreen'
 
 import TurismoScreen from './src/screen/TurismoScreen';
 import MyAboutScreen from './src/screen/MyAboutScreen';
@@ -39,6 +41,7 @@ const MyHomeStackNavigator = createStackNavigator({
   initialRouteName: 'Home',
   
 })
+
 
 const LinesStackNavigator = createStackNavigator({
   Lines: {
@@ -100,13 +103,11 @@ const SuggestionNavigator = createStackNavigator({
       },
     },
   },
-});
-
-const TurismoStackNavigator = createStackNavigator({
-  Turismo: {
-    screen: TurismoScreen,
+  
+  Suggestiondata: {
+    screen: SuggestionDatail,
     navigationOptions: {
-      title: 'Lugares turisticos',
+      title: 'Datos de sugerencias',
       headerStyle: {
         backgroundColor: '#193555',
       },
@@ -116,6 +117,37 @@ const TurismoStackNavigator = createStackNavigator({
       },
     },
   },
+});
+
+const TurismoStackNavigator = createStackNavigator({
+  Turismo: {
+    screen: TurismoScreen,
+    navigationOptions: {
+      title: 'Turistica y Hotelera',
+      headerStyle: {
+        backgroundColor: '#193555',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    },
+  },
+
+  Hotel: {
+    screen: HotelScreen,
+    navigationOptions:{
+      title: 'Hoteles para moler',
+      headerStyle: {
+        backgroundColor: '#193555',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    }
+  },
+  
 });
 
 
@@ -174,7 +206,7 @@ export default App = createDrawerNavigator({
   Turismo: {
     screen: TurismoStackNavigator,
     navigationOptions: {
-      title: 'Lugares turisticos',
+      title: 'Turistica y Hotelera',
       drawerIcon: <Image source = { require('./src/image/Ajustes.png')} style= {{width: 32, height: 32}}/>
     }
   },

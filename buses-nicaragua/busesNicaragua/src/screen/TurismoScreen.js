@@ -15,18 +15,23 @@ class TurismoScreen extends Component{
         this.props.navigation.navigate('Hotel');
     };
 
+    
+    onClickCentosBusquedaScreen = () => {
+        this.props.navigation.navigate('Centros');
+    };
 
     render(){
         return(
             <View>
-                <TouchableOpacity style={styles.button}>
-                     <Button
-                         onPress={this.onClickHotelBusquedaScreen}
-                         title="Hotel"
-                         color="#193555"
-                     />
-                </TouchableOpacity>
-            </View>
+            <TouchableOpacity style={styles.button} onPress={this.onClickHotelBusquedaScreen}>
+                <Text>Hoteles</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.button1} onPress={this.onClickCentosBusquedaScreen}>
+                <Text>Centros Recreativos</Text>
+            </TouchableOpacity>
+        </View>
+
         )
     }
                     
@@ -45,8 +50,18 @@ const styles = StyleSheet.create({
         marginTop: 10,
       },
       button:{
+        fontSize: 14,
         marginTop: 10,
-        backgroundColor: '000000'
+        marginleft: 5,
+        backgroundColor: '#DDDDDD',
+        padding: 10,
+      },
+      button1:{
+        fontSize: 14,
+        marginTop: 10,
+        marginleft: 5,
+        backgroundColor: '#DDDDDD',
+        padding: 10,
       }
   });
 

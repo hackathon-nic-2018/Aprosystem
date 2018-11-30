@@ -20,8 +20,12 @@ import MyHomeScreen from './src/screen/MyHomeScreen';
 import LinesScreen from './src/screen/LinesScreen';
 import MyNearbyStopsScreen from './src/screen/MyNearbyStopsScreen';
 import SuggestionScreen from './src/screen/SuggestionScreen';
-import SuggestionDatail from './src/screen/SuggestionDatail'
-import HotelScreen from './src/screen/HotelScreen'
+import SuggestionDatail from './src/screen/SuggestionDatail';
+import HotelScreen from './src/screen/HotelScreen';
+import HotelAriesScreen from './src/screen/HotelAries';
+import CentroRecreativoScreen from './src/screen/CentroRecreativosScreen';
+import CentroPeñitaScreen from './src/screen/CentroPeñitasScreen';
+
 
 import TurismoScreen from './src/screen/TurismoScreen';
 import MyAboutScreen from './src/screen/MyAboutScreen';
@@ -137,7 +141,7 @@ const TurismoStackNavigator = createStackNavigator({
   Hotel: {
     screen: HotelScreen,
     navigationOptions:{
-      title: 'Hoteles para moler',
+      title: 'Información de Hoteles',
       headerStyle: {
         backgroundColor: '#193555',
       },
@@ -147,7 +151,47 @@ const TurismoStackNavigator = createStackNavigator({
       },
     }
   },
-  
+  HotelAries:{
+    scree: HotelAriesScreen,
+    navigationOptions:{
+      title: 'Hotel 2 Aries',
+      headerStyle: {
+        backgroundColor: '#193555',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    }
+  },
+  Centros: {
+    screem: CentroRecreativoScreen,
+    navigationOptions:{
+      title: 'Centros Recreativos',
+      headerStyle: {
+        backgroundColor: '#193555',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    }
+  },
+
+  CentroPeñita:{
+    screen: CentroPeñitaScreen,
+    navigationOptions:{
+      title: 'Club las Peñitas',
+      headerStyle: {
+        backgroundColor: '#193555',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    }
+  }
+    
 });
 
 

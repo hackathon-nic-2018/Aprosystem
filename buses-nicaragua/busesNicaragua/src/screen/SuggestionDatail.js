@@ -25,11 +25,14 @@ class SuggestiondatailScreen extends Component {
 
 const styles = StyleSheet.create({
     Expreso: {
-      color: 'red',
-      fontWeight: 'bold',
-      fontSize: 18,
-      justifyContent: 'center',
-      paddingHorizontal: 15
+        color: '000000',
+        fontWeight: 'Bold',
+        fontSize: 18,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingHorizontal: 14,
+        borderRadius: 4,
+        marginTop: 3,
     },
   });
 

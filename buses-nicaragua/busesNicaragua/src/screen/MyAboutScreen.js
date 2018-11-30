@@ -15,7 +15,7 @@ class MyAboutScreen extends Component {
             <Text style={styles.Empresa}>Aprosystem</Text>
             <Text style={styles.Version}>Version</Text>
             <Text style={styles.Numero}>1.0.1</Text>
-            <Text style={styles.Description}>Buses Nicaragua proporciona un aproximado del horario de los autobuses sin responsabilisarce </Text>
+            <Text style={styles.Description}>Buses Nicaragua proporciona un aproximado del horario de los autobuses no se responzabilisa de los contra tiempos o fallos que a este se le presenten en el viaje </Text>
          </View>
         );
     }    

@@ -251,7 +251,7 @@ export default App = createDrawerNavigator({
     screen: TurismoStackNavigator,
     navigationOptions: {
       title: 'Turistica y Hotelera',
-      drawerIcon: <Image source = { require('./src/image/Ajustes.png')} style= {{width: 32, height: 32}}/>
+      drawerIcon: <Image source = { require('./src/image/turista.png')} style= {{width: 32, height: 32}}/>
     }
   },
 

@@ -5,7 +5,7 @@ import firebase from 'react-native-firebase';
 import {
     dataLine,
     filterDataLine,
-} from './../state/actions/linesAction'
+} from './../state/actions/SuggestionAction'
 import { ToastAndroid, } from 'react-native'
 
 

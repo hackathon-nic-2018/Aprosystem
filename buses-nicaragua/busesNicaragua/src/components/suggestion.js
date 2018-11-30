@@ -41,7 +41,7 @@ const styleItem = StyleSheet.create({
     },
 });
 
-const SuggestionItem =  ({ item }) => (
+const SuggestionItem =  ({ item,onPress }) => (
     <TouchableOpacity
         onPress={() => onPress(item.key)}
     >
@@ -71,14 +71,14 @@ const style = StyleSheet.create({
     }
 });
 
-const Suggestion = ({ data }) => (
+const Suggestion = ({ data,navigation }) => (
 
     <SafeAreaView>
         <View style={style.container}>
             <ScrollView>
                 <FlatList
                     data={data} 
-                    renderItem={({item}) => <SuggestionItem item={item} onPress={ (key) => navigation.navigate('suggestiondata') } />}
+                    renderItem={({item}) => <SuggestionItem item={item} onPress={ (key) => navigation.navigate('Suggestiondata') } />}
                     ItemSeparatorComponent={() => <View style={{ height: 8, flex: 1, }}></View>}
                 />
             </ScrollView>

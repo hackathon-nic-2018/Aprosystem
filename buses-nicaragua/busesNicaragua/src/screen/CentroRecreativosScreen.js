@@ -12,7 +12,7 @@ import { withNavigation } from 'react-navigation';
 class CentrosRecreativosScreeen extends Component{
 
     onClickCentroBusquedaScreen = () => {
-        this.props.navigation.navigate('CentroPeñitas');
+        this.props.navigation.navigate('CentroPeñita');
     };
 
 

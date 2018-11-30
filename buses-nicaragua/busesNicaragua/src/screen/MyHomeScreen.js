@@ -20,13 +20,6 @@ class MyHomeScreen extends Component {
           headerTitleStyle: {
          fontWeight: 'bold',
           },
-          headerRight:(
-            <Button
-                onPress={() => this.props.navigation.openDrawer()}
-                title="Menu"
-                color="#blue"
-            />
-          ),
     };
 
     onClickBusquedaScreen = () => {

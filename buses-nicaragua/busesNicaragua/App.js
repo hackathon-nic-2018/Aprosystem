@@ -22,7 +22,7 @@ import MyNearbyStopsScreen from './src/screen/MyNearbyStopsScreen';
 import SuggestionScreen from './src/screen/SuggestionScreen';
 import SuggestionDatail from './src/screen/SuggestionDatail';
 import HotelScreen from './src/screen/HotelScreen';
-import HotelAriesScreen from './src/screen/HotelAries';
+import HotelAries from './src/screen/HotelAries';
 import CentroRecreativoScreen from './src/screen/CentroRecreativosScreen';
 import CentroPeñitaScreen from './src/screen/CentroPeñitasScreen';
 
@@ -152,7 +152,7 @@ const TurismoStackNavigator = createStackNavigator({
     }
   },
   HotelAries:{
-    scree: HotelAriesScreen,
+    screen: HotelAries,
     navigationOptions:{
       title: 'Hotel 2 Aries',
       headerStyle: {
@@ -165,7 +165,7 @@ const TurismoStackNavigator = createStackNavigator({
     }
   },
   Centros: {
-    screem: CentroRecreativoScreen,
+    screen: CentroRecreativoScreen,
     navigationOptions:{
       title: 'Centros Recreativos',
       headerStyle: {

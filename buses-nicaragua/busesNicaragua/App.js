@@ -21,7 +21,7 @@ import LinesScreen from './src/screen/LinesScreen';
 import MyNearbyStopsScreen from './src/screen/MyNearbyStopsScreen';
 import SuggestionScreen from './src/screen/SuggestionScreen';
 
-import SettingScreen from './src/screen/SettingScreen';
+import TurismoScreen from './src/screen/TurismoScreen';
 import MyAboutScreen from './src/screen/MyAboutScreen';
 import Lineasdetail from './src/screen/LinesDatail';
 import BusquedaScreen from './src/screen/BusquedaScreen';
@@ -102,9 +102,9 @@ const SuggestionNavigator = createStackNavigator({
   },
 });
 
-const SettingStackNavigator = createStackNavigator({
-  Setting: {
-    screen: SettingScreen,
+const TurismoStackNavigator = createStackNavigator({
+  Turismo: {
+    screen: TurismoScreen,
     navigationOptions: {
       title: 'Ajustes',
       headerStyle: {
@@ -171,10 +171,10 @@ export default App = createDrawerNavigator({
     }
   },
 
-  Setting: {
-    screen: SettingStackNavigator,
+  Turismo: {
+    screen: TurismoStackNavigator,
     navigationOptions: {
-      title: 'Ajustes',
+      title: 'Lugares turisticos',
       drawerIcon: <Image source = { require('./src/image/Ajustes.png')} style= {{width: 32, height: 32}}/>
     }
   },

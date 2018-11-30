@@ -17,7 +17,7 @@ const CustomDrawerContentComponent = (props) => (
                 style={styles.header}
             >
                 <Image
-                    source={require('./../image/mierda.png')}
+                    source={require('./../image/Principal.png')}
                     style={styles.headerImage}
                 />
             </View>

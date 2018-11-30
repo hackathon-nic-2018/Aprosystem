@@ -11,16 +11,16 @@ import { withNavigation } from 'react-navigation';
 
 class HotelScreeen extends Component{
 
-    onClickHotelBusquedaScreen = () => {
-        this.props.navigation.navigate('Hotel');
+    onClickHotelAriesBusquedaScreen = () => {
+        this.props.navigation.navigate('HotelAries');
     };
 
 
     render(){
         return(
             <View>
-                <TouchableOpacity style={styles.button} onPress={this.onClickHotelBusquedaScreen}>
-                    <Text>Hotel</Text>
+                <TouchableOpacity style={styles.button} onPress={this.onClickHotelAriesBusquedaScreen}>
+                    <Text>Hotel 2 Aries</Text>
                 </TouchableOpacity>
             </View>
         )
@@ -41,8 +41,11 @@ const styles = StyleSheet.create({
         marginTop: 10,
       },
       button:{
-        marginTop: 10,
-        backgroundColor: '000000'
+        fontSize: 14,
+        marginTop: 5,
+        marginleft: 5,
+        backgroundColor: '#DDDDDD',
+        padding: 10,
       }
   });
 

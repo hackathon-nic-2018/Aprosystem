@@ -14,7 +14,7 @@ class CentroPeñitasScreen extends Component{
                 <View>
                     <Text style={styles.nombre}>Club Campestre las Peñitas</Text>
                     <Text style={styles.informacion}>Información</Text>
-                    <Text style={styles.Detalle}>Centro recreativo las peñitas ofrece un servicio de piscinas y restaurante en donde puedes disfrutar en familia a un precio muy favorable</Text>
+                    <Text style={styles.Detalle}>Centro recreativo las peñitas ofrece un servicio de piscinas, bar y restaurante en donde puedes disfrutar en familia a un precio muy favorable</Text>
                    
                 </View>
                 <View  style={styles.container}>
@@ -22,7 +22,7 @@ class CentroPeñitasScreen extends Component{
 
                     </Text>
                     <Image style={styles.img}
-                        source = { require('../image/1.jpg')} style= {{width:265, height:225}}
+                        source = { require('../image/2.jpg')} style= {{width:285, height:225}}
                     />
 
                      <Text style={styles.x}>Direccion: De la subasta la Chontaleña 100mt C. Rama</Text>

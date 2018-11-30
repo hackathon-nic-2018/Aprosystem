@@ -22,10 +22,10 @@ class HotelAriesScreen extends Component{
 
                     </Text>
                     <Image style={styles.img}
-                        source = { require('../image/2.jpg')} style= {{width:265, height:225}}
+                        source = { require('../image/1.jpg')} style= {{width:285, height:225}}
                     />
 
-                     <Text style={styles.x}>Direccion: Del pollo estrella 1 cuadra al sur media al oeste</Text>
+                     <Text style={styles.x}>Direccion: Del pollo estrella 1 cuadra al sur media al oeste juigalpa-chontales</Text>
                 </View>
             </View>
 
